@@ -1,0 +1,163 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 5;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  z-index: 5;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 800;
+  color: #e6ebf5;
+  letter-spacing: 0.04em;
+}
+
+.hint {
+  font-size: 11px;
+  color: #8e99ab;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.presets {
+  display: flex;
+  gap: 6px;
+}
+
+.preset {
+  border: 1px solid #2a2f3a;
+  background: #141820;
+  color: #cfd6e3;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.preset:hover {
+  border-color: #3c78ff;
+}
+
+.preset:disabled {
+  opacity: 0.4;
+}
+
+.active {
+  background: #2a63ff;
+  color: white;
+  border-color: #2a63ff;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.input {
+  width: 70px;
+  border: 1px solid #2a2f3a;
+  background: #10141b;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.suffix {
+  font-size: 12px;
+  color: #93a0b5;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.button,
+.primary,
+.danger {
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #2a2f3a;
+}
+
+.primary {
+  background: #2a63ff;
+  border-color: #2a63ff;
+  color: white;
+}
+
+.button {
+  background: #161a22;
+  color: #cfd6e3;
+}
+
+.danger {
+  background: #3a141a;
+  border-color: #5a1c26;
+  color: #ffb8c2;
+}
+
+.button:disabled,
+.primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preset,
+.button,
+.primary,
+.danger,
+.input {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.preset,
+.button,
+.primary,
+.danger {
+  min-height: 44px;
+}
+
+.preset,
+.button,
+.primary,
+.danger {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
